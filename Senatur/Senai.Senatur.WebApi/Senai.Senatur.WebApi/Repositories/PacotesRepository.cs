@@ -32,6 +32,7 @@ namespace Senai.Senatur.WebApi.Repositories
             pacoteBuscado.DataIda = pacoteAtualizado.DataIda;
             pacoteBuscado.DataVolta = pacoteAtualizado.DataVolta;
             pacoteBuscado.Valor = pacoteAtualizado.Valor;
+            pacoteBuscado.NomeCidade = pacoteAtualizado.NomeCidade;
 
             // Atualiza o jogo que foi buscado
             ctx.Pacotes.Update(pacoteBuscado);
@@ -43,6 +44,23 @@ namespace Senai.Senatur.WebApi.Repositories
         public Pacotes BuscarPacotesPorId(int id)
         {
             return ctx.Pacotes.FirstOrDefault(P => P.IdPacote == id);
+        }
+
+        public List<Pacotes> ListarPacotePorCidade(string nomeCidade)
+        {
+            return ctx.Pacotes.ToList().FindAll(p => p.NomeCidade == nomeCidade);
+        }
+
+        public List<Pacotes> ListarPorPrecoAscendente(int valor)
+        {
+            if(valor == 1)
+            {
+                return ctx.Pacotes.OrderByDescending(p => p.Valor).ToList();
+            }
+            else
+            {
+                return ctx.Pacotes.OrderBy(p => p.Valor).ToList();
+            }
         }
     }
 }

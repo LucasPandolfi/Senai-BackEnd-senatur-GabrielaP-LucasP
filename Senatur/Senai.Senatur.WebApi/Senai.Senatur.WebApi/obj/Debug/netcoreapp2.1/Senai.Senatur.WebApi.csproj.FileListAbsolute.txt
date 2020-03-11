@@ -40,3 +40,5 @@ C:\Users\PICHAU\Desktop\Senatur\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\De
 C:\Users\PICHAU\Desktop\Senatur\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\PICHAU\Desktop\Senatur\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.dll
 C:\Users\PICHAU\Desktop\Senatur\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.pdb
+C:\Users\50345891848\Desktop\Senai-BackEnd-senatur-GabrielaP-LucasP\Senatur\Senai.Senatur.WebApi\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.xml
+C:\Users\50345891848\Desktop\Senai-BackEnd-senatur-GabrielaP-LucasP\Senatur\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.xml

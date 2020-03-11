@@ -15,5 +15,9 @@ namespace Senai.Senatur.WebApi.Interfaces
         Pacotes BuscarPacotesPorId(int id);
 
         void AtualizarPacote(int id, Pacotes pacoteAtualizado);
+
+        List<Pacotes> ListarPacotePorCidade(string nomeCidade);
+
+        List<Pacotes> ListarPorPrecoAscendente(int valor);
     }
 }

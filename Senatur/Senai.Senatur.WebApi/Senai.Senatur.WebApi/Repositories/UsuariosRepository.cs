@@ -24,7 +24,7 @@ namespace Senai.Senatur.WebApi.Repositories
 
         public Usuarios BuscarPorEmailSenha(string email, string senha)
         {
-            
+            return ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
         }
 
     }

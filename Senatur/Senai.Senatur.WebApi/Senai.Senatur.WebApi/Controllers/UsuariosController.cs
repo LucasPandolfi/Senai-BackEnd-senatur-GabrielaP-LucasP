@@ -10,11 +10,10 @@ using Senai.Senatur.WebApi.Repositories;
 
 namespace Senai.Senatur.WebApi.Controllers
 {
-    [Produces("Aplication/Json")]
+    [Produces("application/json")]
 
     [Route("api/[controller]")]
 
-    [Authorize]
     [ApiController]
     public class UsuariosController : ControllerBase
     {
@@ -25,12 +24,18 @@ namespace Senai.Senatur.WebApi.Controllers
             _usuariosRepository = new UsuariosRepository();
         }
 
+        /// <summary>
+        /// Lista um Usuario com o titulo de seu tipoUsuario
+        /// </summary>
+        /// <param></param>
+        /// <returns>Cria um objeto pacote</returns>
+        [Authorize(Roles = "1")]
         [HttpGet("TiposUsuario")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult GetTiposUsuario()
         {
             return Ok(_usuariosRepository.ListarComTiposUsuario());
         }
-
-
     }
 }

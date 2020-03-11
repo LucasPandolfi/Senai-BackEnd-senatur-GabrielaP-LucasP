@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 
 namespace Senai.Senatur.WebApi
 {
@@ -22,6 +23,14 @@ namespace Senai.Senatur.WebApi
             services
                 // Adiciona o MVC ao projeto
                 .AddMvc()
+
+                // Adiciona as opções do json 
+                .AddJsonOptions(options => {
+                    // Ignora valores nulos ao fazer junções nas consultas
+                    options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                    // Ignora os loopings nas consultas
+                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                })
 
                 // Define a versão do .NET Core
                 .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);

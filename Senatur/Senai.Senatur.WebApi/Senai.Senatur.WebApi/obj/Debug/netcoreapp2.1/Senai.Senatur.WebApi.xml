@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.Senatur.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Senai.Senatur.WebApi.Controllers.LoginController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.LoginController.Post(Senai.Senatur.WebApi.ViewModels.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Get">
+            <summary>
+            Listando todos os pacotes
+            </summary>
+            <param></param>
+            <returns>Retorna uma objeto pacote</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.GetById(System.Int32)">
+            <summary>
+            Listando os pacotes pela id
+            </summary>
+            <param></param>
+            <returns>Retorna uma objeto pacote</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Post(Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Cadastra um pacote
+            </summary>
+            <param></param>
+            <returns>Cria um objeto pacote</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Put(System.Int32,Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Atualiza um pacote
+            </summary>
+            <param></param>
+            <returns>Atualiza um objeto pacote</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Get(System.String)">
+            <summary>
+            Lista todos os pacotes que sejam na mesma cidade
+            </summary>
+            <param></param>
+            <returns>lista um objeto pacote</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Get">
+            <summary>
+            Lista todos os tipos de usuarios
+            </summary>
+            <param></param>
+            <returns>lista um objeto tipoUsuario</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.GetTiposUsuario">
+            <summary>
+            Lista um Usuario com o titulo de seu tipoUsuario
+            </summary>
+            <param></param>
+            <returns>Cria um objeto pacote</returns>
+        </member>
+    </members>
+</doc>

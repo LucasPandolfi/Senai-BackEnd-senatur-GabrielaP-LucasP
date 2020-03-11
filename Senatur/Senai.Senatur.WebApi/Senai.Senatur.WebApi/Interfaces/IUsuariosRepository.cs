@@ -11,6 +11,5 @@ namespace Senai.Senatur.WebApi.Interfaces
         List<Usuarios> ListarComTiposUsuario();
 
         Usuarios BuscarPorEmailSenha(string email, string senha);
-
     }
 }
